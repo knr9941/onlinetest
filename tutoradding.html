@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+   
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" class="">
+   
+   <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link rel="stylesheet" href="css/onlinetest-css.css">
+    <link rel="stylesheet" href="css/animate.css"  class="css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<title>NXT Onlin Test</title>
+
+	<!--  -->
+
+	<style>
+
+/*        changing color of placeholder start here*/
+        
+::placeholder {
+    color: #cb5920;
+    opacity: 10; /* Firefox */
+}
+
+
+/*        changing color of placeholder ends here*/
+	</style>
+	<script type="text/javascript">
+function validate(str1,str2){
+	
+	var uname=document.student_reg.name.value;
+//	var password=document.Login.Password.value;
+	alert(uname);
+	if(uname==null||uname==""||uname=="Email"){
+		alert("Invalid or empty username");
+		document.Login.Email.focus();
+		return false;
+	}
+	else if(password==null||password==""){
+		alert("Invalid or empty password");
+		document.Login.Password.focus();
+		return false;
+	}
+	else{
+		return true;
+	}
+}
+</script> 
+
+</head>
+
+<body>
+<!--navigation bar stat here-->
+  <div id="navbar" class="navebar-wrapper ">
+           <div class="container">
+              <div class="navbarsize"> 
+               <nav  class="navbar navbar navbar-static-top" style="margin-bottom:0px;">
+  <div  class="container-fluid" >
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand animated slower swing infinite " href="index.html">Online Test</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
+      <ul class="nav navbar-nav" >
+        <li class="active"><a href="index.html" class="color-me" > <i class="fa fa-home" aria-hidden="true"></i> Home <span class="sr-only">(current)</span></a></li>
+        <li><a href="aboutus.html" class="color-me">About Us</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" >Course <span> <i class="fa fa-caret-square-o-down" aria-hidden="true"></i></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#" >java</a></li>
+              <li role="separator" class="divider"></li>
+            <li><a href="#">servlet</a></li>
+              <li role="separator" class="divider"></li>
+            <li><a href="#">jsp</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">javaScript</a></li>
+             <li role="separator" class="divider"></li>
+            <li><a href="#">html</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">And more..</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search" >
+        </div>
+        <button type="submit" class="btn btn-default" name="search"><i class="fa fa-search" aria-hidden="true"></i></button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" >Sign In <span> <i class="fa fa-caret-square-o-down" aria-hidden="true"></i></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#" >Student</a></li>
+              <li role="separator" class="divider"></li>
+            <li><a href="#">Tutor</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Register <span> <i class="fa fa-bars" aria-hidden="true"></i></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="std-reg.html">Student</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Tutor</a></li>
+            
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+           </div>
+        </div>
+	</div>
+	
+<!--navigation bar ends here-->
+<!--
+    <section class="jumbotron text-center" style="margin-bottom: 0px;">
+    <div class="container">
+        <h1 class="jumbotron-heading"> TEST YOUR ABILITY </h1>
+        <p class="lead text-muted mb-0"> Comming soon.......... !</p>
+    </div>
+</section>
+-->
+
+    <!--banner-->
+<div class="banner-top">
+	<div class="container" >
+		<h3 >Adding Question From</h3>
+		<h4><a href="index.html">Home</a><label>/</label>Adding Form</h4>
+		<div class="clearfix"> </div>
+	</div>
+</div>
+
+<!--form starts here -->
+<div class="regform" >
+ <div class="container" >
+          <form id="msform" style="width: 1000px" name="addingQuestion">
+           
+              <!-- fieldsets -->
+             
+              <fieldset>
+                <h2 class="fs-title"><b>Add Question Form</b></h2>
+                <h3 class="fs-subtitle"><b>Add more.. &amp; more..</b></h3>
+                <textarea name="Question" placeholder="Question" style="width: 700px;"></textarea>
+                <input type="text" name="optionA" placeholder="option A" style="width: 400px;" />
+                <input type="text" name="optionB" placeholder="option B" style="width: 400px;"/>
+                <input type="text" name="optionC" placeholder="option C" style="width: 400px;"/>
+                <input type="text" name="optionD" placeholder="option D" style="width: 400px;"/>
+                 
+                <input type="text" name="answer"  placeholder="Correct Answer" required="required"  style="width: 400px;"/><br>
+                
+              
+                <input type="submit" name="submit" class="submit action-button" value="Add" />
+                  <input type="button" name="clear" class="previous action-button" value="Clear" />
+                <input type="button" name="cancle" class="previous action-button" value="Cancle" />
+              </fieldset>
+        </form>
+   </div>
+    
+</div>
+
+<!--form ends here -->
+
+
+    
+
+	<!--   FOOTER START================== --> 
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+        <div class="col-sm-4">
+            <h4 class="title">About us</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit, libero a molestie consectetur, sapien elit lacinia mi.</p>
+            <ul class="social-icon">
+                <a href="#" class="social"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#" class="social"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="#" class="social"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="#" class="social"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                <a href="#" class="social"><i class="fa fa-google" aria-hidden="true"></i></a>
+                <a href="#" class="social"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+            </ul>
+        </div>
+        <div class="col-sm-4">
+            <h4 class="title">My Account</h4>
+            <span class="acount-icon">          
+             <a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i> Signin</a>
+            <a href="#"><i class="fa fa-home" aria-hidden="true"></i>Home </a>
+            <a href="#"><i class="fa fa-book" aria-hidden="true"></i> Courses</a>
+            <a href="#"><i class="fa fa-address-card" aria-hidden="true"></i> Contact Us</a>             
+            </span>
+        </div>
+        <div class="col-sm-4">
+            <h4 class="title">Courses</h4>
+            <div class="category">
+                <a href="#">java</a>
+                <a href="#">servlet</a>
+                <a href="#">jsp</a>
+                <a href="#">html</a>
+                <a href="#">css</a>
+                <a href="#">java script</a>
+                <a href="#">jquery</a>
+                <a href="#">ajex</a>
+                <a href="#">bootstrap</a>          
+            </div>
+        </div>
+<!--
+        <div class="col-sm-3">
+            <h4 class="title">Payment</h4>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <ul class="payment">
+                <li><a href="#"><i class="fa fa-cc-amex" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-credit-card" aria-hidden="true"></i></a></li>            
+                <li><a href="#"><i class="fa fa-paypal" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-cc-visa" aria-hidden="true"></i></a></li>
+            </ul>
+            </div>
+-->
+        </div>
+        <hr>
+        <div class="row text-center"><a href="http://lacodeid.com/" style="color: #fff;"> © Copyright 2018, All Rights Reserved.</a></div>
+    </div>	
+</footer>
+<!--footer ends here-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<script>
+	</script>
+<!--	navbar sicky js start here-->
+ <script type="text/javascript">
+
+     
+       // Scrolling Effect
+
+      $(window).scroll(function() {
+            if($(this).scrollTop()) {
+                  $('nav').addClass('sticky');
+            }
+
+            else {
+                  $('nav').removeClass('sticky');
+            }
+      })
+
+
+      </script>
+
+<!--	navbar sicky js ends here-->
+
+</body>
+
+
+</html>
+<!-- color code http://www.color-hex.com/color-palette/64517-->
